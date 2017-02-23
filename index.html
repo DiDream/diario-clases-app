@@ -3,23 +3,38 @@
   <head lang="es">
     <meta charset="utf-8">
     <title></title>
+    
+    <!-- CDN de fontawesome para obtener iconos -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <head>
       <nav>
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Descripcion</a></li>
+          <li><a href="#">Descripción</a></li>
           <li><a href="#">Equipo</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
     </head>
+    <div class="columna-principal">
+      <section id="descripcion">
+    		<h2>DIARIO DE CLASE</h2>
+    		<p>Diario de clase es una aplicación para que los alumnos y profesores puedan reportar eventos ocurridos durante la jornada académica, a modo de "noticias".</p>
+    	</section>
+    	
+    	<section id=contacto>
+    	  <p>Introduce tu email para recibir noticias: </p>
+    	  <form action="#" method="post">
+    	    <input type="text" name="email" placeholder="Email...">
+    	    <input type="submit" value="Enviar">
+    	  </form>
+    	</section>
+    </div>
     
-    <section id="Descripcion">
-  		<h2>Descripción del proyecto</h2>
-  		<p>Nuestro proyecto consiste en una aplicación llamada "Diario de clase", en la cual tanto alumnos como profesores podrán reportar eventos ocurridos durante la jornada académica, a modo de "noticias". De esta forma, cualquier usuario que este suscrito a este servicio, estará al tanto en todo momento de cualquier suceso que ocurra, como por ejemplo algún cambio de clase, la ausencia de algún profesor, etc. 
-  	</section>
   	<section id="equipo">
   	  <header><h1>Equipo</h1></header>
   	  <article id="Fernando">
@@ -65,15 +80,9 @@
   	   </tr>
   	  </table>
   	</section>
-  	<section id=contacto>
-  	  <p>Introduce tu email para recibir noticias: </p>
-  	  <form action="#" method="post">
-  	    <input type="text" name="email" placeholder="Email...">
-  	    <input type="submit" value="Enviar">
-  	  </form>
-  	</section>
+  	
   	<footer>
-  	  <a href="https://github.com/DiDream/diario-clases-html">Repositorio del proyecto en Github</a>
+  	  <a href="https://github.com/DiDream/diario-clases-html"><i class="fa fa-github" aria-hidden="true"></i><span>Diario de clases</span></a>
   	</footer>
 
   </body>
