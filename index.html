@@ -3,14 +3,14 @@
   <head lang="es">
     <meta charset="utf-8">
     <title></title>
-    
+
     <!-- CDN de fontawesome para obtener iconos -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <head>
+    <header class="mean">
       <nav>
         <ul>
           <li><a href="#">Inicio</a></li>
@@ -19,68 +19,76 @@
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
-    </head>
-    <div class="columna-principal">
-      <section id="descripcion">
-    		<h2>DIARIO DE CLASE</h2>
-    		<p>Diario de clase es una aplicación para que los alumnos y profesores puedan reportar eventos ocurridos durante la jornada académica, a modo de "noticias".</p>
-    	</section>
-    	
-    	<section id=contacto>
-    	  <p>Introduce tu email para recibir noticias: </p>
-    	  <form action="#" method="post">
-    	    <input type="text" name="email" placeholder="Email...">
-    	    <input type="submit" value="Enviar">
-    	  </form>
-    	</section>
+      </header>
+    <div class=" container content">
+        <section id="versiones" class="columna-secundaria">
+            <div class="menu">
+                <h2>VERSIONES</h2>
+            	  <table>
+            	   <tr>
+            	     <th>Versión</th>
+            	     <th>Descripción</th>
+            	   </tr>
+            	   <tr>
+            	     <td><a href="">1.0</a></td>
+            	     <td>Estructura HTML</td>
+            	   </tr>
+            	  </table>
+            </div>
+      	</section>
+        <div class="columna-principal">
+          <section id="descripcion">
+        		<h2>DIARIO DE CLASE</h2>
+        		<p>Diario de clase es una aplicación para que los alumnos y profesores puedan reportar eventos ocurridos durante la jornada académica, a modo de "noticias".</p>
+        	</section>
+
+        	<section id=contacto>
+        	  <p>Introduce tu email para recibir noticias: </p>
+        	  <form action="#" method="post">
+        	    <input type="text" name="email" placeholder="Email...">
+        	    <input type="submit" value="Enviar">
+        	  </form>
+        	</section>
+        </div>
+
+      	<section id="equipo" class="columna-secundaria">
+      	  <header><h1>EQUIPO</h1></header>
+      	  <article id="Fernando" class="member">
+                <div class="image">
+                    <img src="img/fernando.jpg" height="100px"></img>
+                </div>
+
+      	      <h3 class="name-member">Fernando Nantes-Machado Toledo</h3>
+      	      <p class="biography-member">
+
+      	      </p>
+      	      <div class="social-member">
+      	        <a href="https://github.com/alu100897975"><i class="fa fa-github" aria-hidden="true"></i></a>
+      	      </div>
+      	  </article>
+
+
+      	  <article id="Jimmy" class="member">
+              <div class="image">
+                  <img src="img/jimmy.png" height="100px"></img>
+              </div>
+
+      	    <h3 class="name-member"> Alex Jimmy Montaño fuentes</h3>
+      	    <p class="biography-member">
+
+      	    </p>
+
+      	    <div class="social-member">
+      	      <a href="https://github.com/DiDream"><i class="fa fa-github" aria-hidden="true"></i></a>
+      	    </div>
+      	  </article>
+
+      	</section>
     </div>
-    
-  	<section id="equipo">
-  	  <header><h1>Equipo</h1></header>
-  	  <article id="Fernando">
-  	    
-  	    <section>
-  	      <img src="img/fernando.jpg" height="100px"></img>
-  	      <h3 class="name-member">Fernando Nantes-Machado Toledo</h3>
-  	      <p class="biography-member">
-  	        Estudiante de Ingeniería Informática en el itinerario de Tecnologías de la Información del tercer curso en la Universidad de La Laguna.
-  	      </p>
-  	      <div class="social-member">
-  	        <a href="https://github.com/alu100897975">GitHub</a>
-  	      </div>
-  	      
-  	    </section>
-  	  </article>
-  	  
-  	  
-  	  <article id="Jimmy">
-  	    <img src="img/jimmy.png" height="100px"></img>
-  	    <h3 class="name-member"> Alex Jimmy Montaño fuentes</h3>
-  	    <p class="biography-member">
-  	      Estudiante de ingenieria informatica en la universidad de la laguna
-  	    </p>
-  	    
-  	    <div class="social-member">
-  	      <a href="https://github.com/DiDream">Github</a>
-  	    </div>
-  	  </article>
-  	  
-  	</section>
-  	
-  	<section id="versiones">
-  	  <h2>Versiones del proyecto</h2>
-  	  <table>
-  	   <tr>
-  	     <th>Versión</th>
-  	     <th>Descripción</th>
-  	   </tr>
-  	   <tr>
-  	     <td>1.0</td>
-  	     <td>Implementada la estructura de la página web.</td>
-  	   </tr>
-  	  </table>
-  	</section>
-  	
+
+
+
+
   	<footer>
   	  <a href="https://github.com/DiDream/diario-clases-html"><i class="fa fa-github" aria-hidden="true"></i><span>Diario de clases</span></a>
   	</footer>

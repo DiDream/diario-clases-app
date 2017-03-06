@@ -1,18 +1,74 @@
-body, h1, h2, h3,h4, h5, h6, p, div, section, article,a, input {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/* Requisito practica */
+
+div.columna-principal {
+    width: 430px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    height: 100%;
+}
+.columna-secundaria {
+    width: 170px;
+    float: left;
+    height: 100%;
+}
 body {
     font-family: Arial;
+    color: #000;
+    height: 1.5em;
+}
+p {
+    margin-top: .5em;
+}
+a {
+    text-decoration: none;
+    color: blue;
+
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    font-family: Verdana;
+}
+table a {
+    color: green;
+}
+table td {
+    border-collapse: collapse;
+}
+.menu {
+    padding: .3em;
+    margin-bottom: .7em;
+}
+.menu table tr:not(:first-child):hover {
+    background-color: #DADADA;
+}
+
+
+.content {
+    height: 550px;
+}
+
+header.mean {
+    width: 770px;
+    height: 100px;
+    background-color: #333;
+}
+header nav {
+    width: 100%;
+    height: 50px;
+    padding: 25px;
+    text-align: center;
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-
+    display: inline-block;
 }
 
 li {
@@ -38,37 +94,34 @@ li a:hover {
 
 /* ESTILOS PARA LA COLUMNA PRINCIPAL */
 
-div.columna-principal {
-    width: 430px;
-    text-align: center;
-    color: #fff;
-}
+
 #descripcion {
     background: url(../img/fondo-principal.jpg);
     padding: 20px;
     background-position: center;
-    height: 380px;
     background-size: cover;
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    height: 70%;
 }
 #descripcion p {
     margin-top: 20px;
+
 }
 #contacto {
     background-color: #186478; /*  cambiar */
     padding: 20px;
-
+    height: 30%;
 }
 #contacto form {
-    
+
     margin-top: 20px;
 }
 #contacto form input {
-    
+
     border-radius: 5px;
     height: 25px;
 }
@@ -89,6 +142,54 @@ div.columna-principal {
 }
 
 /* FINAL DE ESTILOS PARA COLUMNA PRINCIPAL */
+/* ESTILOS PARA LAS COLUMNAS SECUNDARIAS */
+
+
+/* Versiones del proyecto */
+
+#versiones {
+    text-align: center;
+    padding: 30px 10px 0px
+}
+#versiones h2 {
+    font-size: 20px
+}
+#versiones table {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* estilos de equipo */
+#equipo {
+    padding:30px 10px 0px;
+    text-align: center;
+}
+#equipo header h1 {
+    font-size: 20px;
+}
+#equipo .member {
+    margin-top: 20px;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+.member .name-member {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.member .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.member .social-member {
+    font-size: 23px;
+}
+
 
 /* ESTILOS PARA FOOTER */
 
@@ -104,7 +205,7 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
-    
+
 }
 footer a span {
     margin-left: 5px;
