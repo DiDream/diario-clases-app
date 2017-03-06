@@ -56,6 +56,9 @@ table td {
 }
 
 header.mean {
+    background: url(../img/ull_logo.png) 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
     width: 770px;
     height: 100px;
     background-color: #333;
